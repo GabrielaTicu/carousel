@@ -1,0 +1,54 @@
+html,
+body,
+.grid-container {
+  height: 100%;
+  margin: 0;
+}
+ 
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1.2fr 0.8fr;
+  grid-template-rows: 0.4fr 1.6fr 1.7fr 0.3fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    ". title title"
+    "navigationBar topFive demographicGraph"
+    "navigationBar memeCarousel memeCarousel"
+    "footer footer footer";
+}
+ 
+.title {
+  grid-area: title;
+}
+ 
+.topFive {
+  grid-area: topFive;
+}
+ 
+.demographicGraph {
+  grid-area: demographicGraph;
+}
+ 
+.navigationBar {
+  grid-area: navigationBar;
+}
+ 
+.memeCarousel {
+  grid-area: memeCarousel;
+}
+ 
+.footer {
+  grid-area: footer;
+}
+ 
+.grid-container * {
+  /*border: 3px solid red;*/
+  position: relative;
+}
+ 
+.grid-container *:after {
+  /*content: attr(class);*/
+  position: absolute;
+  top: 0;
+  left: 0;
+}
