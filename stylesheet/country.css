@@ -141,8 +141,8 @@ body {
     display: block;
     content: "";
     position: absolute;
-    margin: auto;
-    transform: translate(-50%, 225%);
+    top: 120px;
+    /*transform: translate(-50%, 225%);*/
     width: 50px;
     height: 50px;
     background-color: rgba(0, 0, 0, 1);
@@ -152,10 +152,10 @@ body {
   
   .button-container .button:nth-child(1) {
     float: left;
-    left: 15%;
+    left: 12%;
   }
   
   .button-container .button:nth-child(2) {
     float: right;
-    left: -15%;
+    left: -17%;
   }
