@@ -94,13 +94,14 @@ body {
   .item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
   }
   
   .item.active {
     opacity: 1;
     z-index: 99;
     box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+    background-color: black;
   }
   
   .item.prev {
@@ -115,21 +116,21 @@ body {
     transform: translate(25%, -50%);
   }
   
-  .items .button-container {
+ /* .items .button-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 275px;
     z-index: 100;
-  }
+  }*/
   
   .button-container .button {
-    color: #fff;
-    font-size: 32px;
+    /*color: #fff;
+    font-size: 32px;*/
     cursor: pointer;
     position: relative;
-    opacity: 0.75;
+    opacity: 1;
     transition: all 300ms ease-in-out;
   }
   /*
@@ -138,24 +139,23 @@ body {
   }*/
   
   .button-container .button:before {
-    display: block;
     content: "";
     position: absolute;
-    top: 120px;
-    /*transform: translate(-50%, 225%);*/
+    top: 50%;
+    transform: translate(0, -52%);
     width: 50px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     z-index: -99;
   }
   
   .button-container .button:nth-child(1) {
     float: left;
-    left: 12%;
+    transform: scale(-1, 1);
   }
   
   .button-container .button:nth-child(2) {
     float: right;
-    left: -17%;
+    transform: translate(0, -90%);
   }
