@@ -1,19 +1,4 @@
 
-    var h = Number(document.getElementById("carousel").getBoundingClientRect().height);
-    var w = Number(document.getElementById("carousel").getBoundingClientRect().width);
-    console.log(h + ", " + w);
-    var buttonTop = "";
-    var buttonLeft = "";
-    var buttons = document.getElementById("buttons");
-    var left = document.getElementById("left");
-    var right = document.getElementById("right");
-    buttonTop = 0.4*h;
-    buttonLeft = 0.23*w;
-    buttons.style.top = buttonTop + "px";
-    left.style.left = -buttonLeft + "px";
-    right.style.left = buttonLeft + "px";
-
-
         const slider = document.querySelector(".items");
 		const slides = document.querySelectorAll(".item");
 		const button = document.querySelectorAll(".button");
